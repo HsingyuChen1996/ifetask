@@ -180,7 +180,23 @@ html, body {
   position: relative;
   width: 100%;
   height: 340px;
+  text-align: center;
   overflow: hidden;
+}
+#info h1 {
+  font-size: 1.75em;
+  color: #fff;
+  margin-top: 50px;
+}
+#info #line {
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background-color: #fff;
+  margin: 10px 0 19px;
+}
+#info p {
+  color: #fff;
 }
 
 #infobg {
@@ -189,4 +205,74 @@ html, body {
   top: 0;
   width: 100%;
   z-index: -1;
+}
+
+#search-block {
+  display: inline-block;
+  width: 1030px;
+  margin-top: 50px;
+}
+
+.select {
+  float: left;
+  position: relative;
+  width: 187px;
+  height: 35px;
+  padding: 0 35px 0 12px;
+  text-align: left;
+  background-color: #fff;
+  margin-right: 29px;
+  color: #a8aaaa;
+  border-width: 0 1px;
+  border-color: #e2cec9;
+  border-style: solid;
+  overflow: hidden;
+}
+.select .arrow {
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  cursor: pointer;
+}
+.select .valuebox {
+  height: 100%;
+  line-height: 35px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.select.active {
+  border: 1px solid #c27971;
+  overflow: visible;
+}
+
+.options {
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  width: 100%;
+  height: 104px;
+  border: 1px solid #c27971;
+  overflow-x: hidden;
+  cursor: pointer;
+}
+.options .option {
+  height: 26px;
+  width: 203px;
+  padding-left: 31px;
+  line-height: 26px;
+  background-color: #e3e2e4;
+  color: #323333;
+}
+.options .option:hover {
+  background: url(../img/tick.png) no-repeat 8px center;
+  background-color: #be4e48;
+  color: #fff;
+}
+
+#search {
+  float: left;
+  width: 235px;
+  height: 35px;
+  background-color: #be4e48;
 }
