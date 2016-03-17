@@ -136,21 +136,21 @@ html, body {
   background-color: #e9615f;
 }
 
-#introduction {
+#block-3 {
   height: 205px;
   padding-top: 45px;
   width: 100%;
   overflow: hidden;
 }
-#introduction li {
+#block-3 li {
   float: left;
   width: 25%;
   text-align: center;
 }
-#introduction li img {
+#block-3 li img {
   height: 40px;
 }
-#introduction li p {
+#block-3 li p {
   width: 50%;
   height: 52px;
   padding: 0 25%;
@@ -160,42 +160,42 @@ html, body {
   border-right: 2px solid #aaaaaa;
 }
 
-#question {
+#block-4 {
   width: 100%;
   height: 360px;
   background-color: #ededec;
   text-align: center;
 }
-#question img {
+#block-4 img {
   margin: 89px 0 49px;
 }
-#question p {
+#block-4 p {
   color: #323333;
   font: 4.5em 'SimHei';
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-#info {
+#block-5 {
   position: relative;
   width: 100%;
   height: 340px;
   text-align: center;
   overflow: hidden;
 }
-#info h1 {
+#block-5 h1 {
   font-size: 1.75em;
   color: #fff;
   margin-top: 50px;
 }
-#info #line {
+#block-5 #line {
   display: inline-block;
   height: 3px;
   width: 30px;
   background-color: #fff;
   margin: 10px 0 19px;
 }
-#info p {
+#block-5 p {
   color: #fff;
 }
 
@@ -275,4 +275,54 @@ html, body {
   width: 235px;
   height: 35px;
   background-color: #be4e48;
+}
+
+#block-6 {
+  height: 530px;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #f8f7f7;
+}
+#block-6 ul {
+  display: inline-block;
+  width: 986px;
+}
+#block-6 ul li {
+  position: relative;
+  width: 217px;
+  height: 323px;
+  padding-top: 13px;
+  margin-left: 36px;
+  border: 1px solid #dcdcdc;
+  background-color: #fff;
+  float: left;
+}
+#block-6 ul li:first-child {
+  margin-left: 0;
+}
+#block-6 ul li.reverse {
+  top: 53px;
+}
+#block-6 ul li.reverse .info {
+  top: -50px;
+}
+#block-6 ul li.reverse .info h1 {
+  font-size: 1.666667em;
+  letter-spacing: 35px;
+  margin-right: -36px;
+}
+
+.info {
+  position: absolute;
+  bottom: -45px;
+  width: 100%;
+  text-align: center;
+}
+.info h1 {
+  font-size: 1.166667em;
+}
+.info p {
+  margin-top: 5px;
+  color: #bcbdbd;
 }
