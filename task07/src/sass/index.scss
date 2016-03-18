@@ -179,16 +179,19 @@ html,body {
         color: #fff;
         margin-top: 50px;
     }
-    #line {
-        display: inline-block;
-        height: 3px;
-        width: 30px;
-        background-color: #fff;
+    .line {
         margin: 10px 0 19px;
     }
     p {
         color: #fff;
     }
+}
+
+.line {
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
 }
 
 #infobg {
@@ -266,9 +269,13 @@ html,body {
 
 #search {
     float: left;
-    width: 235px;
+    width: 210px;
     height: 35px;
+    padding-left: 25px;
     background-color: #be4e48;
+    letter-spacing: 25px;
+    color: #fff;
+    font-size: 1.166667em;
 }
 
 #block-6 {
@@ -318,5 +325,129 @@ html,body {
     p {
         margin-top: 5px;
         color: #bcbdbd;
+    }
+}
+
+#block-7 {
+    width: 100%;
+    overflow: hidden;
+    img {
+        float: left;
+        width: 66.666667%;
+    } 
+}
+
+#block-7-r {
+    float: left;
+    width: 33.333333%;
+    text-align: center;
+    h1 {
+        margin: 165px 0 30px;
+        font-size: 1.666667em;
+        img {
+            float: none;
+            width: 20px;
+            vertical-align: -3px;
+        }
+        span {
+            color: $color;
+        }
+    }
+    p {
+        width: 286px;
+        margin: 0 auto;
+        text-align: left;
+        font-family: 'SimSun';
+        color: #aaaaaa;
+        line-height: 30px;
+    }
+    a {
+        display: inline-block;
+        height: 31px;
+        line-height: 31px;
+        width: 104px;
+        margin: 50px 0 25px;
+        border: 1px solid $color;
+        color: $color;
+        &:hover {
+            background-color: $color;
+            color: #fff;
+        }
+    }
+}
+
+#points {
+    width: 61px;
+    height: 12px;
+    margin: 0 auto;
+    li {
+        float: left;
+        width: 11px;
+        height: 12px;
+        margin-left: 14px;
+        background: url(../img/point.png) no-repeat;
+        cursor: pointer;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    li.active {
+        background: url(../img/point_active.png) no-repeat;
+    }
+}
+
+#block-8 {
+    width: 100%;
+    height: 520px;
+    overflow:hidden;
+    img {
+        float: left;
+        width: 33.333334%;
+    }
+}
+
+.block-8-l {
+    float: left;
+    height: 350px;
+    padding-top: 170px;
+    width: 33.333333%;
+    color: #323333;
+    text-align: center;
+    .line {
+        margin: 0 auto;
+        background-color: #ababab;
+        margin: 25px 0;
+    }
+    &.red {
+        background-color: $color;
+        color: #fff;
+        .line {
+            background-color: #fff;
+        }
+        a {
+            border: 1px solid #fff;
+            color: #fff;
+            &:hover {
+                color: $color;
+                background-color: #fff;
+            }
+        }
+    }
+    p {
+        font: 1.75em 'SimHei';
+    }
+    a {
+        display: block;
+        width: 168px;
+        height: 41px;
+        margin: 0 auto;
+        border: 1px solid $color;
+        color: $color;
+        font: 1.75em 'SimHei';
+        line-height: 41px;
+        &:hover {
+            color: #fff;
+            background-color: $color;
+        }
     }
 }
