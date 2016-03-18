@@ -1,0 +1,32 @@
+{
+  "name": "ifetask07",
+  "version": "1.0.0",
+  "description": "ifetask technology product index",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-zip": "^3.2.0"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/onlinetek/ifetask.git"
+  },
+  "keywords": [
+    "technology product"
+  ],
+  "author": "cz",
+  "license": "ISC"
+}
