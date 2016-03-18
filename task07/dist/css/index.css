@@ -589,6 +589,7 @@ html, body {
 #block-10 form input {
   float: left;
   width: 420px;
+  line-height: 40px;
   padding-left: 10px;
   height: 100%;
   color: #231815;
