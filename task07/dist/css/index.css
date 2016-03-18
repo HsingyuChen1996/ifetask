@@ -1,5 +1,5 @@
 /* reset */
-html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, input, button, img {
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, label, input, button, img, textarea {
   margin: 0;
   padding: 0;
   border: 0;
@@ -456,4 +456,183 @@ html, body {
 .block-8-l a:hover {
   color: #fff;
   background-color: #e74f4d;
+}
+
+#block-9 {
+  height: 750px;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+#block-9 h1 {
+  margin: 119px 0 26px;
+  font: 1.75em 'SimHei';
+  color: #323333;
+}
+#block-9 p {
+  width: 420px;
+  margin: 0 auto;
+  line-height: 18px;
+  color: #aaaaaa;
+}
+
+#block-9-l {
+  float: left;
+  width: 290px;
+  text-align: left;
+  margin-top: 108px;
+}
+#block-9-l li {
+  width: 100%;
+  margin-top: 40px;
+  overflow: hidden;
+}
+#block-9-l li h3 {
+  font: 1.166667em 'SimHei';
+  color: #231815;
+}
+#block-9-l li p {
+  width: 100%;
+  margin: 26px 0 12px;
+}
+#block-9-l li a {
+  display: block;
+  float: right;
+  width: 24px;
+  height: 20px;
+  padding-left: 18px;
+  background: url(../img/unfold.png) no-repeat 0 9px;
+  line-height: 20px;
+  font-family: 'SimSun';
+  outline: 0;
+}
+#block-9-l li:first-child {
+  margin-top: 0;
+}
+
+#block-9-form {
+  width: 640px;
+  float: left;
+  margin-left: 70px;
+  margin-top: 108px;
+}
+#block-9-form p {
+  display: block;
+  float: left;
+  height: 40px;
+  line-height: 40px;
+  width: 310px;
+  margin: 0 0 20px 20px;
+  text-align: left;
+  background-color: #ededee;
+}
+#block-9-form p label {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 75px;
+  padding-left: 15px;
+  color: #231815;
+  font-family: 'SimSun';
+}
+#block-9-form p input {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 220px;
+  line-height: 40px;
+  background-color: transparent;
+}
+#block-9-form p.nomargin {
+  margin-left: 0;
+}
+#block-9-form textarea {
+  width: 620px;
+  height: 140px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ededee;
+  font-family: 'SimSun';
+  color: #231815;
+  resize: none;
+}
+#block-9-form #submit {
+  width: 100%;
+  height: 40px;
+  font: 1.166667em 'SimHei';
+  line-height: 40px;
+  background-color: #ededee;
+}
+
+#block-10 {
+  height: 325px;
+  padding-top: 90px;
+  width: 100%;
+  background-color: #32353e;
+  text-align: center;
+}
+#block-10 h1 {
+  color: #fff;
+  font: 1.75em 'SimHei';
+}
+#block-10 p {
+  width: 470px;
+  margin: 13px auto 30px;
+  color: #fff;
+  font-family: 'SimSun';
+}
+#block-10 form {
+  display: inline-block;
+  width: 510px;
+  height: 40px;
+}
+#block-10 form input {
+  float: left;
+  width: 420px;
+  padding-left: 10px;
+  height: 100%;
+  color: #231815;
+}
+#block-10 form button {
+  float: left;
+  width: 71px;
+  padding-left: 9px;
+  height: 100%;
+  font-size: 1.25em;
+  color: #fff;
+  background-color: #6f7178;
+  letter-spacing: 9px;
+}
+#block-10 form button:hover {
+  background-color: #797b83;
+}
+
+#share {
+  margin-top: 36px;
+}
+#share a {
+  margin-left: 27px;
+  outline: 0;
+}
+#share a:first-child {
+  margin-left: 0;
+}
+
+#footer {
+  height: 58px;
+  width: 100%;
+  background-color: #303039;
+}
+#footer p {
+  float: left;
+  height: 58px;
+  line-height: 58px;
+  color: #fff;
+  font-family: 'SimSun';
+  margin-left: 100px;
+}
+#footer p#toTop {
+  float: right;
+  margin: 0 40px 0 0;
+  cursor: pointer;
 }
