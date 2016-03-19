@@ -38,12 +38,12 @@ html, body {
   min-width: 1280px;
 }
 
-#head {
+.header {
   width: 100%;
   height: 57px;
   background-color: #fff;
 }
-#head #logo {
+.header #logo {
   float: left;
   height: 31px;
   margin: 13px 0 0 59px;
@@ -51,11 +51,11 @@ html, body {
   line-height: 31px;
   color: #393a3a;
 }
-#head #logo img {
+.header #logo img {
   float: left;
   margin-right: 11px;
 }
-#head #login {
+.header .header-loginbtn {
   float: right;
   width: 28px;
   height: 17px;
@@ -68,31 +68,31 @@ html, body {
   cursor: pointer;
 }
 
-#nav {
+.nav {
   float: right;
 }
-#nav li {
+.nav li {
   float: left;
   height: 52px;
   padding: 0 19px;
   line-height: 52px;
   cursor: pointer;
 }
-#nav li a {
+.nav li a {
   font-size: 1.166667em;
   color: #787b83;
 }
-#nav li:hover a {
+.nav li:hover a {
   color: #e74f4d;
 }
-#nav li.active {
+.nav li.active {
   border-bottom: 5px #e74f4d solid;
 }
-#nav li.active a {
+.nav li.active a {
   color: #e74f4d;
 }
 
-#banner {
+.banner-section {
   position: relative;
   width: 100%;
   height: 690px;
@@ -102,26 +102,26 @@ html, body {
       -ms-user-select: none;
           user-select: none;
 }
-#banner img {
+.banner-section img {
   width: 100%;
 }
 
-#banner-wrap {
+.banner-wrap {
   position: absolute;
   left: 9.140625%;
   top: 33.333333%;
   color: #fff;
 }
-#banner-wrap h1 {
+.banner-wrap h1 {
   font-size: 5em;
   margin-bottom: 30px;
 }
-#banner-wrap p {
+.banner-wrap p {
   font-size: 1.75em;
   line-height: 32px;
   padding-left: 7px;
 }
-#banner-wrap a {
+.banner-wrap .banner-btn {
   display: block;
   width: 330px;
   height: 64px;
@@ -132,25 +132,25 @@ html, body {
   line-height: 64px;
   color: #fff;
 }
-#banner-wrap a:hover {
+.banner-wrap .banner-btn:hover {
   background-color: #e9615f;
 }
 
-#block-3 {
+.section-3 {
   height: 205px;
   padding-top: 45px;
   width: 100%;
   overflow: hidden;
 }
-#block-3 li {
+.section-3 li {
   float: left;
   width: 25%;
   text-align: center;
 }
-#block-3 li img {
+.section-3 li img {
   height: 40px;
 }
-#block-3 li p {
+.section-3 li p {
   width: 50%;
   height: 52px;
   padding: 0 25%;
@@ -160,38 +160,38 @@ html, body {
   border-right: 2px solid #aaaaaa;
 }
 
-#block-4 {
+.section-4 {
   width: 100%;
   height: 360px;
   background-color: #ededec;
   text-align: center;
 }
-#block-4 img {
+.section-4 img {
   margin: 89px 0 49px;
 }
-#block-4 p {
+.section-4 p {
   color: #323333;
   font: 4.5em 'SimHei';
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-#block-5 {
+.section-5 {
   position: relative;
   width: 100%;
   height: 340px;
   text-align: center;
   overflow: hidden;
 }
-#block-5 h1 {
+.section-5 h1 {
   font-size: 1.75em;
   color: #fff;
   margin-top: 50px;
 }
-#block-5 .line {
+.section-5 .line {
   margin: 10px 0 19px;
 }
-#block-5 p {
+.section-5 p {
   color: #fff;
 }
 
@@ -202,7 +202,7 @@ html, body {
   background-color: #fff;
 }
 
-#infobg {
+.section-5-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -210,7 +210,7 @@ html, body {
   z-index: -1;
 }
 
-#search-block {
+.select-imitation {
   display: inline-block;
   width: 1030px;
   margin-top: 50px;
@@ -284,18 +284,18 @@ html, body {
   font-size: 1.166667em;
 }
 
-#block-6 {
+.section-6 {
   height: 530px;
   padding-top: 100px;
   width: 100%;
   text-align: center;
   background-color: #f8f7f7;
 }
-#block-6 ul {
+.section-6 ul {
   display: inline-block;
   width: 986px;
 }
-#block-6 ul li {
+.section-6 ul li {
   position: relative;
   width: 217px;
   height: 323px;
@@ -305,16 +305,16 @@ html, body {
   background-color: #fff;
   float: left;
 }
-#block-6 ul li:first-child {
+.section-6 ul li:first-child {
   margin-left: 0;
 }
-#block-6 ul li.reverse {
+.section-6 ul li.reverse {
   top: 53px;
 }
-#block-6 ul li.reverse .info {
+.section-6 ul li.reverse .info {
   top: -50px;
 }
-#block-6 ul li.reverse .info h1 {
+.section-6 ul li.reverse .info h1 {
   font-size: 1.666667em;
   letter-spacing: 35px;
   margin-right: -36px;
@@ -334,33 +334,33 @@ html, body {
   color: #bcbdbd;
 }
 
-#block-7 {
+.section-7 {
   width: 100%;
   overflow: hidden;
 }
-#block-7 img {
+.section-7 img {
   float: left;
   width: 66.666667%;
 }
 
-#block-7-r {
+.section-7-r {
   float: left;
   width: 33.333333%;
   text-align: center;
 }
-#block-7-r h1 {
+.section-7-r h1 {
   margin: 165px 0 30px;
   font-size: 1.666667em;
 }
-#block-7-r h1 img {
+.section-7-r h1 img {
   float: none;
   width: 20px;
   vertical-align: -3px;
 }
-#block-7-r h1 span {
+.section-7-r h1 span {
   color: #e74f4d;
 }
-#block-7-r p {
+.section-7-r p {
   width: 286px;
   margin: 0 auto;
   text-align: left;
@@ -368,7 +368,7 @@ html, body {
   color: #aaaaaa;
   line-height: 30px;
 }
-#block-7-r a {
+.section-7-r a {
   display: inline-block;
   height: 31px;
   line-height: 31px;
@@ -377,7 +377,7 @@ html, body {
   border: 1px solid #e74f4d;
   color: #e74f4d;
 }
-#block-7-r a:hover {
+.section-7-r a:hover {
   background-color: #e74f4d;
   color: #fff;
 }
@@ -402,17 +402,17 @@ html, body {
   background: url(../img/point_active.png) no-repeat;
 }
 
-#block-8 {
+.section-8 {
   width: 100%;
   height: 520px;
   overflow: hidden;
 }
-#block-8 img {
+.section-8 img {
   float: left;
   width: 33.333334%;
 }
 
-.block-8-l {
+.section-8-l {
   float: left;
   height: 350px;
   padding-top: 170px;
@@ -420,30 +420,30 @@ html, body {
   color: #323333;
   text-align: center;
 }
-.block-8-l .line {
+.section-8-l .line {
   margin: 0 auto;
   background-color: #ababab;
   margin: 25px 0;
 }
-.block-8-l.red {
+.section-8-l.red {
   background-color: #e74f4d;
   color: #fff;
 }
-.block-8-l.red .line {
+.section-8-l.red .line {
   background-color: #fff;
 }
-.block-8-l.red a {
+.section-8-l.red a {
   border: 1px solid #fff;
   color: #fff;
 }
-.block-8-l.red a:hover {
+.section-8-l.red a:hover {
   color: #e74f4d;
   background-color: #fff;
 }
-.block-8-l p {
+.section-8-l p {
   font: 1.75em 'SimHei';
 }
-.block-8-l a {
+.section-8-l a {
   display: block;
   width: 168px;
   height: 41px;
@@ -453,49 +453,49 @@ html, body {
   font: 1.75em 'SimHei';
   line-height: 41px;
 }
-.block-8-l a:hover {
+.section-8-l a:hover {
   color: #fff;
   background-color: #e74f4d;
 }
 
-#block-9 {
+.section-9 {
   height: 750px;
   width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
-#block-9 h1 {
+.section-9 h1 {
   margin: 119px 0 26px;
   font: 1.75em 'SimHei';
   color: #323333;
 }
-#block-9 p {
+.section-9 p {
   width: 420px;
   margin: 0 auto;
   line-height: 18px;
   color: #aaaaaa;
 }
 
-#block-9-l {
+.section-9-l {
   float: left;
   width: 290px;
   text-align: left;
   margin-top: 108px;
 }
-#block-9-l li {
+.section-9-l li {
   width: 100%;
   margin-top: 40px;
   overflow: hidden;
 }
-#block-9-l li h3 {
+.section-9-l li h3 {
   font: 1.166667em 'SimHei';
   color: #231815;
 }
-#block-9-l li p {
+.section-9-l li p {
   width: 100%;
   margin: 26px 0 12px;
 }
-#block-9-l li a {
+.section-9-l li a {
   display: block;
   float: right;
   width: 24px;
@@ -506,17 +506,17 @@ html, body {
   font-family: 'SimSun';
   outline: 0;
 }
-#block-9-l li:first-child {
+.section-9-l li:first-child {
   margin-top: 0;
 }
 
-#block-9-form {
+.section-9-form {
   width: 640px;
   float: left;
   margin-left: 70px;
   margin-top: 108px;
 }
-#block-9-form p {
+.section-9-form p {
   display: block;
   float: left;
   height: 40px;
@@ -526,7 +526,7 @@ html, body {
   text-align: left;
   background-color: #ededee;
 }
-#block-9-form p label {
+.section-9-form p label {
   display: block;
   float: left;
   height: 100%;
@@ -535,7 +535,7 @@ html, body {
   color: #231815;
   font-family: 'SimSun';
 }
-#block-9-form p input {
+.section-9-form p input {
   display: block;
   float: left;
   height: 100%;
@@ -543,10 +543,10 @@ html, body {
   line-height: 40px;
   background-color: transparent;
 }
-#block-9-form p.nomargin {
+.section-9-form p.nomargin {
   margin-left: 0;
 }
-#block-9-form textarea {
+.section-9-form textarea {
   width: 620px;
   height: 140px;
   padding: 10px;
@@ -556,7 +556,7 @@ html, body {
   color: #231815;
   resize: none;
 }
-#block-9-form #submit {
+.section-9-form #submit {
   width: 100%;
   height: 40px;
   font: 1.166667em 'SimHei';
@@ -564,29 +564,29 @@ html, body {
   background-color: #ededee;
 }
 
-#block-10 {
+.section-10 {
   height: 325px;
   padding-top: 90px;
   width: 100%;
   background-color: #32353e;
   text-align: center;
 }
-#block-10 h1 {
+.section-10 h1 {
   color: #fff;
   font: 1.75em 'SimHei';
 }
-#block-10 p {
+.section-10 p {
   width: 470px;
   margin: 13px auto 30px;
   color: #fff;
   font-family: 'SimSun';
 }
-#block-10 form {
+.section-10 form {
   display: inline-block;
   width: 510px;
   height: 40px;
 }
-#block-10 form input {
+.section-10 form input {
   float: left;
   width: 420px;
   line-height: 40px;
@@ -594,7 +594,7 @@ html, body {
   height: 100%;
   color: #231815;
 }
-#block-10 form button {
+.section-10 form button {
   float: left;
   width: 71px;
   padding-left: 9px;
@@ -604,7 +604,7 @@ html, body {
   background-color: #6f7178;
   letter-spacing: 9px;
 }
-#block-10 form button:hover {
+.section-10 form button:hover {
   background-color: #797b83;
 }
 
@@ -619,12 +619,12 @@ html, body {
   margin-left: 0;
 }
 
-#footer {
+.footer {
   height: 58px;
   width: 100%;
   background-color: #303039;
 }
-#footer p {
+.footer p {
   float: left;
   height: 58px;
   line-height: 58px;
@@ -632,7 +632,7 @@ html, body {
   font-family: 'SimSun';
   margin-left: 100px;
 }
-#footer p#toTop {
+.footer p#toTop {
   float: right;
   margin: 0 40px 0 0;
   cursor: pointer;

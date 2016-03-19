@@ -27,13 +27,16 @@ body, textarea, input, button {
     outline: 0;
     color: #000;
 }
+
 /* index */
 $color : #e74f4d;
-html,body {
+
+html, body {
     width: 100%;
     min-width: 1280px;
 }
-#head {
+
+.header {
     width: 100%;
     height: 57px;
     background-color: #fff;
@@ -49,7 +52,7 @@ html,body {
             margin-right: 11px;
         }
     }
-    #login {
+    .header-loginbtn {
         float: right;
         width: 28px;
         height: 17px;
@@ -63,7 +66,7 @@ html,body {
     }
 }
 
-#nav {
+.nav {
     float: right;
     li {
         float: left;
@@ -87,7 +90,7 @@ html,body {
     }
 }
 
-#banner {
+.banner-section {
     position: relative;
     width: 100%;
     height: 690px;
@@ -98,7 +101,7 @@ html,body {
     }
 }
 
-#banner-wrap {
+.banner-wrap {
     position: absolute;
     left: (117/1280) * 100%;
     top: (230/690) * 100%;
@@ -112,7 +115,7 @@ html,body {
         line-height: 32px;
         padding-left: 7px;
     }
-    a {
+    .banner-btn {
         display: block;
         width: 330px;
         height: 64px;
@@ -123,12 +126,12 @@ html,body {
         line-height: 64px;
         color: #fff;
         &:hover {
-            background-color: lighten($color, 4%)
+            background-color: lighten($color, 4%);
         }
     }
 }
 
-#block-3 {
+.section-3 {
     height: 205px;
     padding-top: 45px;
     width: 100%;
@@ -152,7 +155,7 @@ html,body {
     }
 }
 
-#block-4 {
+.section-4 {
     width: 100%;
     height: 360px;
     background-color: #ededec;
@@ -168,7 +171,7 @@ html,body {
     }
 }
 
-#block-5 {
+.section-5 {
     position: relative;
     width: 100%;
     height: 340px;
@@ -194,7 +197,7 @@ html,body {
     background-color: #fff;
 }
 
-#infobg {
+.section-5-bg {
     position: absolute;
     left: 0;
     top: 0;
@@ -202,7 +205,7 @@ html,body {
     z-index: -1;
 }
 
-#search-block {
+.select-imitation {
     display: inline-block;
     width: 1030px;
     margin-top: 50px;
@@ -278,7 +281,7 @@ html,body {
     font-size: 1.166667em;
 }
 
-#block-6 {
+.section-6 {
     height: 530px;
     padding-top: 100px;
     width: 100%;
@@ -328,7 +331,7 @@ html,body {
     }
 }
 
-#block-7 {
+.section-7 {
     width: 100%;
     overflow: hidden;
     img {
@@ -337,7 +340,7 @@ html,body {
     } 
 }
 
-#block-7-r {
+.section-7-r {
     float: left;
     width: 33.333333%;
     text-align: center;
@@ -396,7 +399,7 @@ html,body {
     }
 }
 
-#block-8 {
+.section-8 {
     width: 100%;
     height: 520px;
     overflow:hidden;
@@ -406,7 +409,7 @@ html,body {
     }
 }
 
-.block-8-l {
+.section-8-l {
     float: left;
     height: 350px;
     padding-top: 170px;
@@ -452,7 +455,7 @@ html,body {
     }
 }
 
-#block-9 {
+.section-9 {
     height: 750px;
     width: 1000px;
     margin: 0 auto;
@@ -470,7 +473,7 @@ html,body {
     }
 }
 
-#block-9-l {
+.section-9-l {
     float: left;
     width: 290px;
     text-align: left;
@@ -504,7 +507,7 @@ html,body {
     }
 }
 
-#block-9-form {
+.section-9-form {
     width: 640px;
     float: left;
     margin-left: 70px;
@@ -558,7 +561,7 @@ html,body {
     }
 }
 
-#block-10 {
+.section-10 {
     height: 325px;
     padding-top: 90px;
     width: 100%;
@@ -613,7 +616,7 @@ html,body {
     }
 }
 
-#footer {
+.footer {
     height: 58px;
     width: 100%;
     background-color: #303039;
