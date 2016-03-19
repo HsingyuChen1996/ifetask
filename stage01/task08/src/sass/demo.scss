@@ -1,0 +1,62 @@
+@charset "utf-8";
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.row {
+    box-sizing: border-box;
+    min-height: 1px;
+    padding: 0 10px; 
+    &:before, &:after {
+        content:"";
+        display: table;
+        clear:both;
+    }
+}
+
+[class*='col-'] {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    min-height: 1px;
+}
+
+@mixin make-col($column, $gutter) {
+    width: ($column/12)*100%;
+    padding-left:  ($gutter / 2);
+    padding-right: ($gutter / 2);
+    padding-top:　$gutter;
+}
+
+$i: 1;
+@while $i < 13 {
+    .col-md-#{$i} {
+        @include make-col($i, 20px);
+    }
+    $i: $i + 1;
+}
+
+$j: 1;
+@media screen and (max-width: 768px) {
+    .row {
+        padding: 0 10px;
+    }
+    @while $j < 13 {
+        .col-sm-#{$j} {
+            @include make-col($j, 20px);
+        }
+        $j: $j + 1;
+    }
+}
+
+.grid {
+    height: 48px;
+    border: 1px #999 solid; 
+    background-color: #eee;
+}
