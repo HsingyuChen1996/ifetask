@@ -1,0 +1,225 @@
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, label, input, button, img, textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+button {
+  -ms-box-sizing: content-box;
+  box-sizing: content-box;
+  cursor: pointer;
+}
+
+body, textarea, input, button {
+  font: 12px/1.14 'Microsoft YaHei';
+  outline: 0;
+  color: #000;
+}
+
+/* index */
+html, body {
+  width: 100%;
+  min-width: 1280px;
+}
+
+.header {
+  width: 100%;
+  height: 56px;
+  background-color: #2189bf;
+}
+.header .logo {
+  float: left;
+  margin: 10px 0 0 50px;
+}
+.header .login {
+  float: right;
+  height: 16px;
+  margin: 20px 94px 0 21px;
+  line-height: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.header .login img {
+  float: left;
+  margin-right: 3px;
+}
+.header .section-search {
+  float: right;
+  width: 312px;
+  height: 28px;
+  margin-top: 14px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+.header .section-search img {
+  margin: 6px 0 0 17px;
+  float: left;
+}
+.header .section-search #search {
+  height: 28px;
+  width: 250px;
+  margin-left: 10px;
+  line-height: 28px;
+}
+
+.container {
+  height: 1210px;
+  width: 100%;
+}
+
+.container-l {
+  height: 100%;
+  width: 260px;
+  float: left;
+  background-color: #2a2e3d;
+}
+
+.container-r {
+  height: 100%;
+  margin-left: 260px;
+}
+
+.userinfo {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  font: 12px 'SimSun';
+}
+.userinfo div p:first-child {
+  font: 1.333333em 'SimHei';
+}
+
+.userinfo-t {
+  display: inline-block;
+  height: 57px;
+  margin-top: 18px;
+}
+.userinfo-t .avatar {
+  float: left;
+  height: 55px;
+  width: 55px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+.userinfo-t .avatar img {
+  display: inline-block;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 1px;
+}
+.userinfo-t .username {
+  float: left;
+  margin-left: 18px;
+  font: 1.333333em 'SimHei';
+  line-height: 57px;
+  color: #fff;
+}
+
+.userinfo-b {
+  margin-top: 24px;
+  color: #6e8095;
+}
+.userinfo-b .favorites, .userinfo-b .fans {
+  display: inline-block;
+}
+.userinfo-b .favorites p, .userinfo-b .fans p {
+  line-height: 16px;
+}
+.userinfo-b .favorites {
+  border-right: 2px solid #313545;
+  padding-right: 31px;
+}
+.userinfo-b .fans {
+  padding-left: 31px;
+  margin-left: -7px;
+}
+
+.nav {
+  width: 100%;
+}
+.nav li {
+  height: 48px;
+  width: 100%;
+  font-family: 'SimHei';
+  cursor: pointer;
+  color: #6e8095;
+  overflow: hidden;
+}
+.nav li .item {
+  width: 190px;
+  height: 48px;
+  margin-left: 45px;
+  padding-left: 25px;
+  line-height: 48px;
+}
+.nav li .item.star {
+  background: url(../img/star-icon.png) no-repeat 0 48.5%;
+}
+.nav li .item.share {
+  background: url(../img/share-icon.png) no-repeat 0 48.5%;
+}
+.nav li .item.report {
+  background: url(../img/report-icon.png) no-repeat 0 48.5%;
+}
+.nav li .item.info {
+  background: url(../img/info-icon.png) no-repeat 0 48.5%;
+}
+.nav li.unfold {
+  height: auto;
+  overflow: visible;
+}
+.nav li.active {
+  color: #ededef;
+  background-color: #383d4e;
+}
+
+.folders {
+  margin-top: -10px;
+  padding-left: 65px;
+}
+.folders li {
+  height: 30px;
+  width: 175px;
+  padding-left: 20px;
+  line-height: 30px;
+  background: url(../img/fold-icon.png) no-repeat 3px 9px;
+}
+.folders li.unfold {
+  background: url(../img/unfold-icon.png) no-repeat 0 12px;
+}
+.folders li .folder-item {
+  padding-left: 16px;
+  background: url(../img/folder-icon.png) no-repeat 0 48%;
+}
+.folders li.active .folder-item {
+  background-image: url(../img/folder-active-icon.png);
+}
+
+.files {
+  padding-left: 15px;
+  width: 160px;
+}
+.files li {
+  width: 145px;
+  padding-left: 15px;
+  background: url(../img/file-icon.png) no-repeat 0 center;
+}
+.files li.active {
+  background-image: url(../img/file-active-icon.png);
+}
