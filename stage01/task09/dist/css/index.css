@@ -1,8 +1,13 @@
 /* reset */
-html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, label, input, button, img, textarea {
+html, body, h1, h2, h3, h4, h5, h6, div, ul, li, p, form, label, input, button, img {
   margin: 0;
   padding: 0;
   border: 0;
+}
+
+table, th, td, thead, tbody {
+  margin: 0;
+  padding: 0;
 }
 
 li {
@@ -26,7 +31,7 @@ button {
   cursor: pointer;
 }
 
-body, textarea, input, button {
+body, input, button {
   font: 12px/1.14 'Microsoft YaHei';
   outline: 0;
   color: #000;
@@ -768,4 +773,64 @@ html, body {
 }
 .calendar-container .canlendar-day li b.weekend, .calendar-container .canlendar-day li p.festival {
   color: #c9161d;
+}
+
+.ranklist .section-container {
+  padding: 18px 40px;
+}
+
+.ranklist-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-space: 0;
+  text-align: center;
+}
+.ranklist-table thead tr {
+  height: 27px;
+}
+.ranklist-table thead th {
+  font: 13px 'SimHei';
+  font-weight: 400;
+  color: #231815;
+}
+.ranklist-table tbody tr {
+  height: 23px;
+}
+.ranklist-table tbody td {
+  color: #323333;
+}
+.ranklist-table tbody td:last-child {
+  position: relative;
+  text-align: left;
+  padding-left: 35px;
+}
+.ranklist-table tbody td div {
+  position: absolute;
+  width: 55%;
+  height: 5px;
+  top: 8px;
+  left: 40%;
+  background-color: #dcdcdc;
+}
+.ranklist-table tbody td div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  background-color: #7ecaef;
+}
+.ranklist-table tbody td div.ranklist-first span {
+  background-color: #ec6d51;
+  width: 80%;
+}
+.ranklist-table tbody td div.ranklist-second span {
+  background-color: #ef8150;
+  width: 70%;
+}
+.ranklist-table tbody td div.ranklist-third span {
+  background-color: #f19e4f;
+  width: 60%;
 }
