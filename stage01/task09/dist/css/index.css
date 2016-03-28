@@ -799,7 +799,7 @@ html, body {
 .ranklist-table tbody td {
   color: #323333;
 }
-.ranklist-table tbody td:last-child {
+.ranklist-table tbody td.num {
   position: relative;
   text-align: left;
   padding-left: 35px;
