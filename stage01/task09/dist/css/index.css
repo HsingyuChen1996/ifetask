@@ -38,6 +38,9 @@ html, body {
   min-width: 1280px;
 }
 
+.clearfix {
+  *zoom: 1;
+}
 .clearfix:before, .clearfix:after {
   content: '';
   display: table;
@@ -339,6 +342,7 @@ html, body {
   font-family: 'SimHei';
   border: 1px solid #c3c3c3;
   overflow: hidden;
+  cursor: pointer;
 }
 .select.select-mr {
   margin-right: 12px;
@@ -356,7 +360,6 @@ html, body {
   background: url(../img/select-arrow.png) no-repeat center;
   background-color: #fff;
   text-align: center;
-  cursor: pointer;
 }
 .select .select-valuebox {
   height: 100%;
@@ -679,4 +682,90 @@ html, body {
 .project-form .search-btn {
   float: right;
   margin-top: 5px;
+}
+
+.calendar .section-container {
+  padding: 10px 20px 0;
+}
+
+.calendar-filter {
+  border-bottom: 1px solid #a9cfec;
+  padding-bottom: 10px;
+}
+.calendar-filter .select {
+  float: left;
+  width: 62px;
+  height: 20px;
+  margin-left: 2%;
+  border: 1px solid #cbcbcb;
+}
+.calendar-filter .select.select-long {
+  width: 83px;
+}
+.calendar-filter .select.select-mid {
+  width: 73px;
+}
+.calendar-filter .select .select-valuebox {
+  padding-left: 4px;
+  line-height: 20px;
+}
+.calendar-filter .select:first-child {
+  margin-left: 1%;
+}
+.calendar-filter #backtoday {
+  float: left;
+  width: 62px;
+  height: 20px;
+  margin-left: 2%;
+  text-align: center;
+  border: 1px solid #cbcbcb;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.calendar-container {
+  width: 100%;
+}
+.calendar-container .calendar-week {
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid #e1e1e1;
+  font-family: 'SimHei';
+  color: #535353;
+}
+.calendar-container .calendar-week li {
+  float: left;
+  width: 14.285714%;
+  text-align: center;
+}
+.calendar-container .canlendar-day {
+  font-family: 'SimHei';
+  color: #323333;
+}
+.calendar-container .canlendar-day li {
+  float: left;
+  box-sizing: border-box;
+  width: 14.285714%;
+  height: 42px;
+  padding-top: 7px;
+  margin-top: 3px;
+  text-align: center;
+  cursor: pointer;
+}
+.calendar-container .canlendar-day li:hover, .calendar-container .canlendar-day li.active {
+  border: 1px solid #f4c21d;
+  padding-top: 6px;
+}
+.calendar-container .canlendar-day li.empty {
+  cursor: default;
+}
+.calendar-container .canlendar-day li.empty:hover {
+  border: none;
+  padding-top: 7px;
+}
+.calendar-container .canlendar-day li b {
+  font-weight: 400;
+}
+.calendar-container .canlendar-day li b.weekend, .calendar-container .canlendar-day li p.festival {
+  color: #c9161d;
 }

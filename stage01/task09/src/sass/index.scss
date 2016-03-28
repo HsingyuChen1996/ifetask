@@ -37,6 +37,7 @@ html, body {
 }
 
 .clearfix {
+    *zoom: 1;
     &:before,&:after {
         content: '';
         display: table;
@@ -340,6 +341,7 @@ html, body {
     font-family: 'SimHei'; 
     border: 1px solid #c3c3c3; 
     overflow: hidden;
+    cursor: pointer;
     &.select-mr {
         margin-right: 12px;
     }
@@ -356,7 +358,6 @@ html, body {
         background: url(../img/select-arrow.png) no-repeat center;
         background-color: #fff;
         text-align: center;
-        cursor: pointer;
     }
     .select-valuebox {
         height: 100%;
@@ -685,5 +686,90 @@ html, body {
     .search-btn {
         float: right;
         margin-top: 5px;
+    }
+}
+.calendar {
+    .section-container {
+        padding: 10px 20px 0;
+    }
+}
+.calendar-filter {
+    border-bottom: 1px solid #a9cfec;
+    padding-bottom: 10px;
+    .select {
+        float: left;
+        width: 62px;
+        height: 20px;
+        margin-left: 2%;
+        border: 1px solid #cbcbcb;
+        &.select-long {
+            width: 83px;
+        }
+        &.select-mid {
+            width: 73px;
+        }
+        .select-valuebox {
+            padding-left: 4px;
+            line-height: 20px;
+        }
+        &:first-child {
+            margin-left: 1%;
+        }
+    }
+    #backtoday {
+        float: left;
+        width: 62px;
+        height: 20px;
+        margin-left: 2%;
+        text-align: center;
+        border: 1px solid #cbcbcb;
+        line-height: 20px;
+        cursor: pointer;
+    }
+}
+.calendar-container {
+    width: 100%;
+    .calendar-week {
+        height: 30px;
+        line-height: 30px;
+        border-bottom: 1px solid #e1e1e1;
+        font-family: 'SimHei';
+        color: #535353;
+        li {
+            float: left;
+            width: (1/7)*100%;
+            text-align: center;
+        }
+    }
+    .canlendar-day {
+        font-family: 'SimHei';
+        color: #323333;
+        li {
+            float: left;
+            box-sizing: border-box;
+            width: (1/7)*100%;
+            height: 42px;
+            padding-top: 7px;
+            margin-top: 3px;
+            text-align: center;
+            cursor: pointer;
+            &:hover, &.active {
+                border: 1px solid #f4c21d;
+                padding-top: 6px;
+            }
+            &.empty {
+                cursor: default;
+                &:hover {
+                    border: none;
+                    padding-top: 7px;
+                }
+            }
+            b {
+                font-weight: 400;
+            }
+            b.weekend, p.festival {
+                color: #c9161d;
+            }
+        }
     }
 }
