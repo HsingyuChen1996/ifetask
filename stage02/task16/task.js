@@ -4,15 +4,13 @@ function trim(str) {
     //\uFEFF是utf8的字节序标记，"\xA0"是全角空格
     return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
 }
-//类型检查
-function type(obj) {
-    if (obj == null) {
-        return obj + "";
-    }
-    return typeof obj === "object" || typeof obj === "function" ?
-        allType[Object.prototype.toString.call(obj)] || "object" :
-        typeof obj;
+function cityValidate(str){
+    return /^[\u4e00-\u9fa5a-zA-Z]+$/g.test(str);
 }
+function qualityValidate(str){
+    return /\d+/g.test(str);
+}
+
 //绑定事件
 function addEvent(elem, event, func){
     if(elem.addEventListener){
@@ -37,15 +35,18 @@ function delegateEvent(element, tag, eventName, listener) {
 
 function addAqiData() {
     var city = trim(document.getElementById('aqi-city-input').value);
-    var quality = parseInt(trim(document.getElementById('aqi-value-input').value), 10); 
+    var quality = trim(document.getElementById('aqi-value-input').value);
     if(!city || !quality){
-        alert('不能为空');
+        alert('不能为空！');
         return false;
-    }else if(type(quality) !== 'number'){
-        alert('空气质量必须为数字');
+    }else if(!qualityValidate(quality)){
+        alert('空气质量必须为数字！');
         return false;
-    }else{
-        aqiData[city] = quality;
+    }else if(!cityValidate(city)){
+        alert('城市名必须为中文或英文！')
+        return false;
+    }else {
+        aqiData[city] = parseInt(quality,10);
         return true;
     }
 }

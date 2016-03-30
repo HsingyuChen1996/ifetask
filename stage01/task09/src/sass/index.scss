@@ -804,7 +804,7 @@ html, body {
         }
         td {
             color: #323333;
-            &:last-child {
+            &.num {
                 position: relative;
                 text-align: left;
                 padding-left: 35px;
