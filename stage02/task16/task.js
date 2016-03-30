@@ -37,9 +37,7 @@ function delegateEvent(element, tag, eventName, listener) {
 
 function addAqiData() {
     var city = trim(document.getElementById('aqi-city-input').value);
-    var quality = parseInt(trim(document.getElementById('aqi-value-input').value), 10);
-    console.log(city);
-    console.log(quality); 
+    var quality = parseInt(trim(document.getElementById('aqi-value-input').value), 10); 
     if(!city || !quality){
         alert('不能为空');
         return false;
