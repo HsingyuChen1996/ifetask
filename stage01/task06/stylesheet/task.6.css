@@ -1,0 +1,522 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	border: none;
+}
+body{
+	display: block;
+	position: relative;
+	width: 980px;
+	height: 1386px;
+}
+#line{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 44px;
+	width: 892px;
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+}
+#red1{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 110px;
+	height: 61px;
+	background-color: red;
+	color: white;
+	font-size: 12px;
+	font-family: Simhei；
+}
+#bt{
+	display: block;
+	position: absolute;
+	bottom: 2px;
+	left: 0px;
+	text-indent: 0.8em;
+	width: 62px;
+	height: 12px;
+	line-height: 12px;
+}
+#rq{
+	font-size: 12px;
+	font-family: Simhei;
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	color: #d45d5c;
+}
+#tu1{
+	display: block;
+	position: absolute;
+	top: 91px;
+	left: 44px;
+	width: 641px;
+	height: 301px;
+}
+#green{
+	display: block;
+	position: absolute;
+	background-color: #a0c5ac;
+	top: 91px;
+	left: 44px;
+	width: 191px;
+	height: 301px;
+	opacity: 0.5;
+}
+#pink{
+	display: block;
+	background-color: #e6bac0;
+	position: absolute;
+	top: 91px;
+	left: 494px;
+	width: 191px;
+	height: 301px;
+	opacity: 0.5;
+}
+#you{
+	display: block;
+	position: absolute;
+	top: 91px;
+	right: 44px;
+	width: 203px;
+	height: 301px;
+	border-top: 2px solid #cc8091;
+}
+#AT{
+	display: block;
+	position: absolute;
+	color: #000000;
+	font-size: 20px;
+	width: 203px;
+	font-family: Microsoft YAHEI;
+	line-height: 40px;
+	text-decoration: underline;
+}
+.big{
+	font-size: 26px;
+}
+#BT{
+	display: block;
+	width: 203px;
+	font-size: 12px;
+	color: #676767;
+	font-family: KaiTi;
+	line-height: 10px;
+	position: absolute;
+	top: 85px;
+	left: 0px;
+}
+#qb{
+	display: block;
+	position: absolute;
+	top: 100px;
+	left: -25px;
+	font-weight: 500;
+	font-size: 116px;
+	font-family: Microsoft YAHEI;
+	font-style: italic;
+	color: #75b86b;
+}
+#se{
+	display: block;
+	position: absolute;
+	font-size: 55px;
+	font-family: MIcrosoft YAHEI;
+	color: #cc8091;
+	left: 10px;
+	bottom: 0px;
+	width: 75px;
+	height: 60px;
+}
+#css{
+	display: block;
+	position: absolute;
+	font-size: 21px;
+	font-family: Microsoft YAHEI;
+	color: #cc8091;
+	bottom: 15px;
+	left: 93px;
+}
+#sc{
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	font-family: Microsoft YAHEI;
+	color: #cc8091;
+	bottom: 0px;
+	left: 93px;
+}
+#wtnr{
+	display: block;
+	position: absolute;
+	width: 230px;
+	height: 142px;
+	color: #767777;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Simsun;
+	top: 465px;
+	left: 44px;
+}
+#what{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 17px;
+	top: 430px;
+	left: 44px;
+	color: #418c59;
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: Microsoft YAHEI;
+	font-weight: 600;
+}
+#when{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 17px;
+	top: 430px;
+	left: 304px;
+	color: #d2994f;
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: Microsoft YAHEI;
+	font-weight: 600;
+}
+#wenr{
+	display: block;
+	position: absolute;
+	width: 230px;
+	height: 142px;
+	color: #767777;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Simsun;
+	top: 465px;
+	left: 304px;
+}
+
+#how{
+	display: block;
+	position: absolute;
+	width: 50px;
+	height: 17px;
+	top: 430px;
+	left: 564px;
+	color: #cc7680;
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: Microsoft YAHEI;
+	font-weight: 600;
+}
+#hwnr{
+	display: block;
+	position: absolute;
+	letter-spacing: 4px;
+	width: 230px;
+	height: 142px;
+	color: #767777;
+	font-size: 12px;
+	line-height: 16px;
+	font-family: Simsun;
+	top: 465px;
+	left: 564px;
+}
+.pink{
+	color: #cd4a48;
+	font-style: italic;
+}
+#ii{
+	display: block;
+	position: absolute;
+	line-height: 16px;
+	font-size: 12px;
+	color: #231815;
+	font-family: Microsoft YAHEI;
+	top: 564px;
+	left: 564px;
+	opacity: 0.7;
+}
+#huang{
+	display: block;
+	position: absolute;
+	top: 675px;
+	left: 44px;
+	width: 415px;
+	height: 160px;
+	border-bottom: 2px solid;
+}
+#yy{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 415px;
+	color: #11456b;
+	font-size: 42px;
+	font-family:Simhei;
+	font-weight: 600;
+	line-height: 50px; 
+}
+#the{
+	color: #f5e327;
+	font-size: 72px;
+	font-style: italic;
+}
+#hz{
+	display: block;
+	width: 415px;
+	height: 35px;
+	left: 0px;
+	top: 115px;
+    position: absolute;
+    color: #11456b;
+    font-size: 33px;
+    font-family: Simhei;
+    font-weight: 600;
+}
+#kuang{
+	display: block;
+	position: absolute;
+	top: 843px;
+	left: 44px;
+	width: 415px;
+}
+.fl{
+	display: block;
+	font-size: 12px;
+	font-family: Simsun;
+	color: #767777;
+}
+#fl1{
+	line-height: 16px;
+	width: 415px;
+}
+#fl3{
+	display: block;
+	position: absolute;
+	top: 112px;
+	left: 0px;
+	width: 415px;
+	height: 400px;
+}
+#da{
+	font-size: 70px;
+    color: #f5e327;
+    font-family: Microsoft YAHEI;
+    float: left;
+    display: block;
+    height: 70px;
+    line-height: 70px;
+    width: 74px;
+}
+#pt{
+	display: block;
+	float: right;
+	margin-top: 3px;
+	padding-right: 3px;
+	padding-right: 4px;
+}
+#pt3{
+	display: block;
+	position: absolute;
+	top: 675px;
+	right: 44px;
+}
+#fl2{
+	text-indent: 2em;
+}
+#gray{
+	display: block;
+	position: absolute;
+	width: 458px;
+	height: 61px;
+	background-color: #9b9999;
+	opacity: 0.4;
+	top: 890px;
+	right: 44px;
+}
+#sg{
+	display: block;
+	position: absolute;
+	width: 125px;
+	height: 44px;
+	top: 898px;
+	left: 525px;
+	border-left: 3px solid #72b16a;
+	color: white;
+	font-size: 26px;
+	font-family: Microsoft YAHEI;
+	text-align: center;
+}
+#xiao{
+	display: block;
+	position: absolute;
+	top: 898px;
+	height: 44px;
+	left: 653px;
+	font-size: 12px;
+	letter-spacing: 0.4em;
+	line-height: 44px;
+	color: #72b16a;
+	font-family: Microsoft YAHEI;
+	font-style: italic;
+}
+#pk{
+	display: block;
+	position: absolute;
+	background-color: #eeedd6;
+	width: 459px;
+	height: 318px;
+	top: 970px;
+	left: 475px;
+}
+#l1{
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 45px;
+	width: 375px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-family: Simsun;
+	color: #5a5b5b;
+}
+#l2{
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 45px;
+	width: 375px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-family: Simsun;
+	color: #5a5b5b;
+}
+#l3{
+	display: block;
+	position: absolute;
+	top: 90px;
+	left: 45px;
+	width: 375px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	font-family: Simsun;
+	color: #5a5b5b;
+}
+#t1{
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom: 9px solid #11456c;
+	position: absolute;
+	top: 40px;
+	left: 30px;
+}
+#t2{
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom: 9px solid #11456c;
+	position: absolute;
+	top: 70px;
+	left: 30px;
+}
+#t3{
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-left: 5px solid white;
+	border-right: 5px solid white;
+	border-bottom: 9px solid #11456c;
+	position: absolute;
+	top: 100px;
+	left: 30px;
+}
+.sp{
+	font-size: 12px;
+	font-family: Microsoft YAHEI;
+	font-style: italic;
+}
+#red{
+	display: block;
+	position: absolute;
+	background-color: #d45d5c;
+	width: 260px;
+	height: 160px;
+	top: 160px;
+	left: 0px;
+}
+#o{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 15px;
+	height: 86px;
+	line-height: 86px;
+	color: #ffffff;
+	font-size: 110px;
+	font-family: Microsoft YAHEI;
+	border-right: 2px solid #ffffff;
+}
+#sz{
+	display: block;
+	position: absolute;
+	top: 40px;
+	left: 100px;
+	font-size: 21px;
+	font-family: Simhei;
+	color: #ffffff;
+	font-style: italic;
+	line-height: 24px;
+}
+#hw{
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	line-height: 12px;
+	color: #ffffff;
+	font-family: Simhei;
+	margin-top: 6px;
+}
+#hello{
+	display: block;
+	width: 170px;
+	position: absolute;
+	right: 10px;
+	top: 160px;
+	color: #5a5b5b;
+	font-size: 14px;
+	font-style: italic;
+	font-family: Simhei;
+	line-height: 16px;
+	height: 205px;
+}
+.yh{
+	color: #d45d5c;
+	font-size: 72px;
+	font-style: normal;
+}
+#yh1{
+	float: left;
+}
+#yh2{
+	position: absolute;
+	display: block;
+	width: 72px;
+	height: 72px;
+	text-align: right;
+	right: 0px;
+	bottom: 0px;
+}

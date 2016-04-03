@@ -8,7 +8,7 @@ function cityValidate(str){
     return /^[\u4e00-\u9fa5a-zA-Z]+$/g.test(str);
 }
 function qualityValidate(str){
-    return /\d+/g.test(str);
+    return /^\d+$/g.test(str);
 }
 
 //绑定事件

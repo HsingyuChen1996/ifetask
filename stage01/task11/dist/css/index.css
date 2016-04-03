@@ -266,7 +266,7 @@ nav ul li a {
 }
 
 .article-item-2 .article-item-title {
-  margin-top: 0.64rem;
+  margin: 0.64rem 0;
   font-size: 1.44rem;
   overflow: hidden;
   text-overflow: ellipsis;
