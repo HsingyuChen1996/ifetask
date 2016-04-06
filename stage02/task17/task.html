@@ -21,9 +21,21 @@
             clear: both;
         }
         #aqi-chart {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: flex-end;
+            align-items: flex-end;
             position: relative;
             height: 500px;
-            padding-top: 100px;
+            padding: 100px 0;
             width: 1200px;
             margin: 0 auto;
             overflow: hidden;
@@ -48,14 +60,12 @@
 </head>
 <body>
     <fieldset id="form-gra-time">
-        <legend>请选择日期粒度：</legend>
+        <legend>空气质量查询：</legend>
+        日期：
         <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
         <label>周<input name="gra-time" value="week" type="radio"></label>
         <label>月<input name="gra-time" value="month" type="radio"></label>
-    </fieldset>
-    <fieldset>
-        <legend>请选择查看的城市：</legend>
-        <select id="city-select"></select>
+        <label>请选择查看的城市：<select id="city-select"></select></label>
     </fieldset>
     <div class="aqi-chart-wrap">
         <ul id="aqi-chart">

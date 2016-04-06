@@ -80,21 +80,29 @@ function caculateWeek(){
     var weekData = {};
     for(var i in aqiSourceData){
         var day = (new Date('2016-01-01')).getDay();
-        var week = [0, 0, 0, 0, 0, 0, 0];
-        weekData[i] = [];
-        for(var j = 0; j < 7; j++){
-            weekData[i][j] = 0;
+        var weekAmount  = 91/7 == 0 && day == 1 ? 91/7 : 91/7 + 1;
+        var data = [];
+        var week = 0;
+        weekData[i] = {};
+        for(var j = 1; j <= weekAmount; j++){
+            weekData[i]['2016年第' + j + '周'] = 0;
+            data[j-1] = [0,0];
         }
         for(var k in aqiSourceData[i]){
-            weekData[i][day] += aqiSourceData[i][k];
-            week[day]++;
+            data[week][0] += aqiSourceData[i][k];
+            data[week][1]++;
             day++;
             if(day == 7) {
                 day = 0;
+            }else if(day == 1){
+                week++;
             }
         }
-        for(var m = 0; m < 7; m++){
-            weekData[i][m] = parseInt(weekData[i][m]/week[m], 10);
+        console.log(data)
+        week = 0;
+        for(var m in weekData[i]){
+            weekData[i][m] = parseInt(data[week][0]/data[week][1], 10);
+            week++;
         }
     }
     return weekData;
@@ -103,22 +111,26 @@ function caculateWeek(){
 function caculateMonth(){
     var monthData = {};
     for(var i in aqiSourceData){
-        var monthDay = [31, 29, 31];
-        var day = 0;
-        var month = 0;
-        monthData[i] = [];
-        for(var j = 0; j < 3; j++){
-            monthData[i][j] = 0;
-        }
+        var monthDay = [31, 29, 31],
+            data = [0, 0, 0],
+            day = 0,
+            month = 0;
+        monthData[i] = {
+            '2016-01': 0,
+            '2016-02': 0,
+            '2016-03': 0
+        };
         for(var k in aqiSourceData[i]){
-            monthData[i][month] += aqiSourceData[i][k];
+            data[month] += aqiSourceData[i][k];
             if(day++ == monthDay[month]){
                 day = 0;
                 month++;
             }
         }
-        for(var m = 0; m < 3; m++){
-            monthData[i][m] = parseInt(monthData[i][m]/monthDay[m], 10);
+        month = 0;
+        for(var m in monthData[i]){
+            monthData[i][m] = parseInt(data[month]/monthDay[month], 10);
+            month++;
         }
     }
     return monthData;
@@ -130,9 +142,14 @@ function renderChart() {
     var weatherData = chartData[pageState['nowGraTime']][pageState['nowSelectCity']];
     var chart = document.getElementById('aqi-chart');
     var chartWidth = parseInt(chart.getBoundingClientRect().width);
+    var divide = {
+        "day": 200,
+        "week": 20,
+        "month": 5,
+    }
     var lis = '';
     for(var i in weatherData){
-        lis += '<li style="height:' + weatherData[i] + 'px; width:6px; margin-left: 5px; background-color:' + getRandomColor() + ';"></li>';
+        lis += '<li style="height:' + weatherData[i] + 'px; width:' + chartWidth/divide[pageState.nowGraTime] + 'px; background-color:' + getRandomColor() + ';" title="日期：' + i + '&nbsp;空气质量：' + weatherData[i] + '"></li>';
     }
     chart.innerHTML = lis;
 }
