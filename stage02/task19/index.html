@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>任务十九：基础JavaScript练习（二）</title>
+    </head>
+    <style>
+        ul {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-align-items: flex-end;
+            -ms-flex-align: flex-end;
+            align-items: flex-end;
+            width: 1200px;
+            height: 500px;
+            margin: 0 auto;
+            list-style: none;
+        }
+        ul:before, ul:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        li {
+            float: left;
+            width: 19px;
+            margin-left: 1px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+<body>
+    <input type="text" id="num">
+    <button data-method="unshift">左侧入</button>
+    <button data-method="push">右侧入</button>
+    <button data-method="shift">左侧出</button>
+    <button data-method="pop">右侧出</button>
+    <button data-method="random">随机45个数</button>
+    <button data-method="bubbleSort">冒泡排序</button>
+    <ul id="queue"></ul>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
