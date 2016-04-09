@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>任务十八：基础JavaScript练习（一）</title>
+    </head>
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            float: left;
+            height: 40px;
+            padding: 0 5px;
+            margin-right: 5px;
+            text-align: center;
+            line-height: 40px;
+            color: #fff;
+            background-color: #f00;
+        }
+        li.matched {
+            color: #00f;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            resize: none;
+        }
+    </style>
+<body>
+    <textarea id="input"></textarea>
+    <button data-method="unshift">左侧入</button>
+    <button data-method="push">右侧入</button>
+    <button data-method="shift">左侧出</button>
+    <button data-method="pop">右侧出</button>
+    <input type="text" id="search">
+    <button data-method="search">搜索</button>
+    <ul id="queue"></ul>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
