@@ -2,30 +2,54 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>任务十八：基础JavaScript练习（一）</title>
+        <title>任务二十二：JavaScript和树（一）</title>
     </head>
     <style>
-        ul {
-            list-style: none;
+        div { border: 1px solid #000; box-sizing: border-box; padding: 20px 10px; background-color: #fff;}
+        #root { width: 600px;  height: 300px; margin: 100px auto 0;}
+        #root:before, #root:after {
+            content: '';
+            display: table;
+            clear: both;
         }
-        li {
+        #root div {
             float: left;
-            width: 40px;
-            height: 40px;
-            margin-right: 5px;
-            text-align: center;
-            line-height: 40px;
-            color: #fff;
-            background-color: #f00;
+            width: calc(50% - 10px);
+            height: 100%;
+            margin: 0 5px;
         }
+        p { text-align: center; }
     </style>
 <body>
-    <input type="text" id="num">
-    <button data-method="unshift">左侧入</button>
-    <button data-method="push">右侧入</button>
-    <button data-method="shift">左侧出</button>
-    <button data-method="pop">右侧出</button>
-    <ul id="sequence"></ul>
+    <div id="root" data-test="1">
+        <div data-test="2">
+            <div data-test="4">
+                <div data-test="8"></div>
+                <div data-test="9"></div>
+            </div>
+            <div data-test="5">
+                <div data-test="10"></div>
+                <div data-test="11"></div>
+            </div>
+        </div>
+        <div data-test="3">
+            <div data-test="6">
+                <div data-test="12"></div>
+                <div data-test="13"></div>
+            </div>
+            <div data-test="7">
+                <div data-test="14"></div>
+                <div data-test="15"></div>
+            </div>
+        </div>
+    </div>
+    <p>
+        <button data-method="preOrder">前序</button>
+        <button data-method="inOrder">中序</button>
+        <button data-method="postOrder">后序</button>
+        <label for="time">时间间隔(default:200ms)：</label>
+        <input type="text" id="time" value="200">
+    </p>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

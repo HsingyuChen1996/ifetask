@@ -1,74 +1,77 @@
-window.onload = function() {
-    function Queue(que){
-        var queue = que;
-        this.unshift = function (value){
-            if(this.insertCheck(value)){
-                queue.unshift(value);
-                this.render();
-            }
-        };
-        this.push = function (value){
-            if(this.insertCheck(value)){
-                queue.push(value); 
-                this.render();
-            }
-        };
-        this.shift = function (value){
-            if(this.removeCheck()){
-                alert(queue.shift());
-                this.render();
-            }
-        };
-        this.pop = function (value){
-            if(this.removeCheck()){
-                alert(queue.pop());
-                this.render();
-            }
-        };
-        this.insertCheck = function (value){
-            if(Object.prototype.toString.call(value) !== '[object Number]'){
-                alert('请输入数字');
-                return false;
-            }else if(!value){
-                alert('无输入');
-                return false;
-            }
-            return true;
-        };
-        this.removeCheck = function (value){
-            if(queue.length === 0){
-                alert('队列里已经没有数字了');
-                return false;
-            }
-            return true;
-        };
-        this.render = function(que){
-            que = que || queue[i];
-            var sequenceList = document.getElementById('sequence');
-            var lis = '';
-            for(var i = 0, len = queue.length; i < len; i++){
-                lis += '<li>' + queue[i] + '</li>';
-            }
-            sequenceList.innerHTML = lis;
-        };
+function BinaryTree(root){
+    this.root = root;
+    this.isAnimating = false;
+    this.animQueue = [];
+}
+BinaryTree.prototype.preOrder = function (node){
+    node = node || this.root;
+    this.animQueue.push(node);
+    if(node.firstElementChild){
+        this.preOrder(node.firstElementChild);
     }
-    function addEvent(elem, event, func){
-        if(elem.addEventListener){
-            elem.addEventListener(event, func, false);
-        }else if(elem.attachEvent){
-            elem.attachEvent('on'+event, func);
+    if(node.lastElementChild){
+        this.preOrder(node.lastElementChild);
+    }
+};
+BinaryTree.prototype.inOrder = function (node){
+    node = node || this.root;
+    if(node.firstElementChild){
+        this.inOrder(node.firstElementChild);
+    }
+    this.animQueue.push(node);
+    if(node.lastElementChild){
+        this.inOrder(node.lastElementChild);
+    }
+};
+BinaryTree.prototype.postOrder = function (node){
+    node = node || this.root;
+    if(node.firstElementChild){
+        this.postOrder(node.firstElementChild);
+    }
+    if(node.lastElementChild){
+        this.postOrder(node.lastElementChild);
+    }
+    this.animQueue.push(node);
+};
+BinaryTree.prototype.animate = function (){
+    this.isAnimating = true;
+    var arr = this.animQueue,
+        len = arr.length,
+        time = parseInt(document.getElementById('time').value, 10) || 200,
+        that = this,
+        count = 0,
+        time;
+    time= setInterval(function (){
+        arr[Math.max(count - 1, 0)].style.backgroundColor = '#fff';
+        arr[Math.min(count, len - 1)].style.backgroundColor = '#09f';
+        count++;
+        if(count > arr.length){
+            clearInterval(time);
+            that.animQueue = [];
+            arr[len - 1].style.backgroundColor = '#fff';
+            that.isAnimating = false;
         }
+    }, time);
+}
+function addEvent(elem, event, func){
+    if(elem.addEventListener){
+        elem.addEventListener(event, func, false);
+    }else if(elem.attachEvent){
+        elem.attachEvent('on'+event, func);
     }
-    var btn = document.getElementsByTagName('button');
-    var que = new Queue([1, 2, 3, 4, 5]);
-    que.render();
-    Array.prototype.forEach.call(btn, function (item, index){
+}
+window.onload = function() {
+    var root = document.getElementById('root');
+    var tree = new BinaryTree(root);
+    var btns = document.getElementsByTagName('button');
+    Array.prototype.forEach.call(btns, function (item, index){
         addEvent(item, 'click', function(){
-            var method = item.getAttribute('data-method');
-            if(method == 'unshift' || method == 'push'){
-                que[method](parseInt(document.getElementById('num').value, 10));
+            if(tree.isAnimating){
+                alert('动画正在进行，请稍候再进行遍历操作！')
             }else {
-                que[method]();
+                var method = item.getAttribute('data-method');
+                tree[method]();
+                tree.animate();
             }
         });
     })

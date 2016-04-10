@@ -2,30 +2,43 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>任务十八：基础JavaScript练习（一）</title>
+        <title>任务二十一：基础JavaScript练习（四）</title>
     </head>
     <style>
         ul {
             list-style: none;
+            height: 180px;
         }
         li {
             float: left;
-            width: 40px;
             height: 40px;
+            padding: 0 5px;
             margin-right: 5px;
             text-align: center;
             line-height: 40px;
             color: #fff;
-            background-color: #f00;
+            background-color: #06f;
+        }
+        textarea {
+            width: 300px;
+            height: 100px;
+            resize: none;
+        }
+        #tagList li {
+            cursor: pointer;
         }
     </style>
 <body>
-    <input type="text" id="num">
-    <button data-method="unshift">左侧入</button>
-    <button data-method="push">右侧入</button>
-    <button data-method="shift">左侧出</button>
-    <button data-method="pop">右侧出</button>
-    <ul id="sequence"></ul>
+    <p>
+        <label for="tag">Tag:</label>
+        <input type="text" id="tag" placeholder="请添加标签">
+    </p>
+    <ul id="tagList"></ul>
+    <p>
+        <textarea id="hobby" placeholder="请输入您的兴趣爱好"></textarea>
+    </p>
+    <button id="confirm" type="button">确认兴趣爱好</button>
+    <ul id="hobbyList"></ul>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
