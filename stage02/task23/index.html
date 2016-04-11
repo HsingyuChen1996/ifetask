@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>任务二十三：JavaScript和树（二）</title>
+    </head>
+    <style>
+        div { border: 1px solid #000; box-sizing: border-box; background-color: #fff;}
+        #root { width: 1140px; height: 200px; margin: 100px auto 0; line-height: 198px;}
+        #root div {
+            display: inline-block;
+            padding: 0 3px;
+            height: calc(100% - 20px);
+        }
+        #root > div {
+            line-height: 176px;
+        }
+        #root > div > div {
+            line-height: 154px;
+        }
+        #root > div > div > div {
+            line-height: 132px;
+        }
+        #root > div > div > div > div {
+            line-height: 110px;
+        }
+        p { text-align: center; }
+    </style>
+<body>
+    <div id="root">Super
+        <div>Co
+            <div>Apple
+                <div>Pear</div>
+                <div>Pig</div>
+                <div>Cola</div>
+                <div>Soccer</div>
+            </div>
+            <div>Phone</div>
+            <div>Study
+                <div>Book</div>
+                <div>School</div>
+            </div>
+        </div>
+        <div>Note
+            <div>Human
+                <div>Code</div>
+                <div>Super</div>
+                <div>Man</div>
+            </div>
+            <div>Program
+                <div>Element
+                    <div>Cat</div>
+                </div>
+                <div>Class</div>
+            </div>
+        </div>
+        <div>Fish</div>
+    </div>
+    <p>
+        <button data-method="bft">广度优先遍历</button>
+        <button data-method="dft">深度优先遍历</button>
+    </p>
+    <p>
+        <label for="time">搜索(精确匹配)：</label>
+        <input type="text" id="search" placeholder="输入要搜索的值">
+        <button data-method="bfs">广度优先搜索</button>
+        <button data-method="dfs">深度优先搜索</button>
+    </p>
+    <p>
+        <label for="time">动画时间间隔(default:200ms)：</label>
+        <input type="text" id="time" value="200">
+    </p>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
