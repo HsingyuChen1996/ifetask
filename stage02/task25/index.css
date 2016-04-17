@@ -1,0 +1,62 @@
+html, body, div, ul, li, p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+ul {
+    list-style: none;
+}
+.container {
+    width: 340px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #383d4e;
+    color: #fff;
+    font: 12px 'Microsoft YaHei';
+    color: #6e8095;
+}
+.root {
+    width: 100%;
+}
+.root li {
+    height: 30px;
+    padding-left: 20px;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.root li.folder {
+    background: url(img/fold-icon.png) no-repeat 3px 9px;
+}
+.root li.folder.active {
+    background: url(img/unfold-icon.png) no-repeat 0 12px;
+    height: auto;
+}
+.root li > .folder-item {
+    padding-left: 16px;
+    background: url(img/folder-icon.png) no-repeat 0 48%;
+}
+.root li.folder.active > .folder-item {
+    background-image: url(img/folder-active-icon.png);
+    color: #ededef;
+}
+li.file {
+    padding-left: 35px;
+    background: url(img/file-icon.png) no-repeat 20px center;
+}
+li.file a{
+    padding-left: 20px;
+}
+.searched {
+    color: #0f0 !important;
+}
+p {
+     padding: 20px 0;
+}
+a{
+    cursor: pointer;
+    padding-left: 10px;
+}
+a:hover {
+    text-decoration: underline;
+}

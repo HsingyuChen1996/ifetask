@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>任务二十四：JavaScript和树（三）</title>
+    </head>
+    <style>
+        div { border: 1px solid #000; box-sizing: border-box; background-color: #fff; -moz-user-select: none; user-select: none; cursor: pointer;}
+        div.selected { background-color: #54f;}
+        #root { width: 1220px; height: 200px; margin: 100px auto 0; line-height: 198px;}
+        #root div {
+            display: inline-block;
+            padding: 0 5px;
+            height: calc(100% - 20px);
+        }
+        #root > div {
+            line-height: 176px;
+        }
+        #root > div > div {
+            line-height: 154px;
+        }
+        #root > div > div > div {
+            line-height: 132px;
+        }
+        #root > div > div > div > div {
+            line-height: 110px;
+        }
+        p { text-align: center; }
+    </style>
+<body>
+    <div id="root">Super
+        <div>Co
+            <div>Apple
+                <div>Pear</div>
+                <div>Pig</div>
+                <div>Cola</div>
+                <div>Soccer</div>
+            </div>
+            <div>Phone</div>
+            <div>Study
+                <div>Book</div>
+                <div>School</div>
+            </div>
+        </div>
+        <div>Note
+            <div>Human
+                <div>Code</div>
+                <div>Super</div>
+                <div>Man</div>
+            </div>
+            <div>Program
+                <div>Element
+                    <div>Cat</div>
+                </div>
+                <div>Class</div>
+            </div>
+        </div>
+        <div>Fish</div>
+    </div>
+    <p>
+        <label for="time">动画时间间隔(default:200ms)：</label>
+        <input type="text" id="time" value="200">
+    </p>
+    <p>
+        <button data-method="bft">广度优先遍历</button>
+        <button data-method="dft">深度优先遍历</button>
+    </p>
+    <p>
+        <label for="time">搜索(精确匹配)：</label>
+        <input type="text" id="search" placeholder="输入要搜索的值">
+        <button data-method="bfs">广度优先搜索</button>
+        <button data-method="dfs">深度优先搜索</button>
+        注：可以匹配多个节点。例：Super。
+    </p>
+    <p>
+        <label for="node">节点名称(不得为空)：</label>
+        <input type="text" id="node" placeholder="输入单个节点名称">
+        <button data-method="addNode">添加节点</button>
+        <button data-method="delNode">删除节点</button>
+        注：支持多选,添加节点时需要输入节点名称
+    </p>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

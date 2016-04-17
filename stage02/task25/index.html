@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>任务二十五：JavaScript和树（四）</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+<body>
+    <div class="container">
+        <p style="font-size: 24px;">类似于sublimeText左侧folders</p>
+        <p>
+            <input type="text" id="search" placeholder="输入要搜索的值">
+            <button id="bfs">搜索</button>
+            注： 精确匹配
+        </p>
+        <ul class="root">
+            <div class="root-name">Folders</div>
+            <li class="folder">
+                <div class="folder-item">文件夹一</div>
+                <ul class="folder-sub">
+                    <li class="file">文档1</li>
+                    <li class="file">文档2</li>
+                    <li class="folder">
+                        <div class="folder-item">文件夹一</div>
+                        <ul class="folder-sub">
+                            <li class="file">文档1</li>
+                            <li class="file">文档2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="folder">
+                <div class="folder-item">文件夹二</div>
+                <ul class="folder-sub">
+                    <li class="file">文档1</li>
+                    <li class="file">文档2</li>
+                    <li class="folder">
+                        <div class="folder-item">文件夹一</div>
+                        <ul class="floder-sub">
+                            <li class="file">文档1</li>
+                            <li class="file">文档2</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="folder">
+                <div class="folder-item">文件夹三</div>
+                <ul class="floder-sub">
+                    <li class="file">文档1</li>
+                    <li class="file">文档2</li>
+                </ul>
+            </li>
+            <li class="file">文档1</li>
+            <li class="file">文档2</li>
+        </ul>
+    </div>
+    
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
