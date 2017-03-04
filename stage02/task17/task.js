@@ -55,6 +55,7 @@ function delegateEvent(element, tag, eventName, listener) {
     })();
     addEvent(element, eventName, fn);
 }
+
 var aqiSourceData = {
     "北京": randomBuildData(500),
     "上海": randomBuildData(300),

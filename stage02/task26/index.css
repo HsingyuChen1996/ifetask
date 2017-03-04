@@ -1,0 +1,55 @@
+html, body, div, ul, li, p, label, input, button, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+#control {
+    width: 299px;
+    height: 600px;
+    overflow: hidden;
+    float: left;
+    border-right: 1px solid #000;
+}
+
+#console {
+    height: 400px;
+}
+
+#console {
+    width: 289px;
+    padding: 0 5px;
+    height: 449px;
+    border-bottom: 1px solid #000;
+    overflow-x: hidden;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#command {
+    height: 150px;
+    font-size: 16px;
+    padding-top: 10px;
+}
+#command p {
+    height: 24px;
+    padding: 5px 0;
+}
+button {
+    height: 24px;
+    background-color: #f60;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#universe {
+    float: left;
+}

@@ -5,7 +5,7 @@
 }
 
 html {
-    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+    font-family: 'Microsoft YaHei', "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
     text-size-adjust: 100%;
     font-size: 62.5%;
 }
@@ -35,7 +35,7 @@ article, aside, footer, header, nav, section {
 a {
     background: transparent;
     text-decoration: none;
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
     &:active, &:hover {
         outline: 0;
     }
@@ -145,7 +145,7 @@ nav {
                 img {
                     width: 81rem/$proportion;
                     margin-top: 15rem/$proportion;
-                } 
+                }
             }
             a {
                 display: block;
@@ -164,7 +164,7 @@ nav {
     ul {
         width: 100%;
         height: 100%;
-        padding-top: 38rem/$proportion; 
+        padding-top: 38rem/$proportion;
         li {
             float: left;
             width: 33.333333%;
@@ -183,7 +183,7 @@ nav {
                 color: #000;
             }
             h3 {
-                margin-top: 28rem/$proportion; 
+                margin-top: 28rem/$proportion;
                 color: #5c5c5c;
             }
         }
@@ -199,7 +199,7 @@ nav {
         border-bottom: 4rem/$proportion solid #dedede;
         line-height: 116rem/$proportion;
         font-size: 44rem/$proportion;
-        font-weight: 700; 
+        font-weight: 700;
     }
 }
 
@@ -229,7 +229,7 @@ nav {
             text-align: center;
             color: #494949;
             &:nth-child(n+3){
-                margin-bottom: 0; 
+                margin-bottom: 0;
             }
         }
     }
