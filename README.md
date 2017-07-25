@@ -2,9 +2,7 @@
 
 2016年参加百度前端技术学院时的项目,当时还是大二，代码比较稚嫩，而且因为考试原因没有完成全部内容，现在大四了，还是比较有空闲的，找时间补上。
 
-先贴上16年ife的地址
-
-[百度前端技术学院](http://ife.baidu.com/2016/task/all)
+先贴上16年ife的地址：[百度前端技术学院](http://ife.baidu.com/2016/task/all)
 
 - [任务七：实现常见的技术产品官网的页面架构及样式布局](http://dtcz.github.io/ifetask/stage01/task07/dist/index.html)
 - [任务八：响应式网格（栅格化）布局](http://dtcz.github.io/ifetask/stage01/task08/dist/demo.html)
